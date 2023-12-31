@@ -1,0 +1,16 @@
+--Created bookkiosk schema
+
+USE bookkiosk
+
+create table donations (
+	StudentEmail varchar(255), 
+	BookID varchar(255) NOT NULL,
+	donationDate datetime NOT NULL);
+
+create table StudentAccount ( 
+	StudentEmail varchar(255) not null, 
+	StudentPassword varchar(255) not null);
+
+SELECT * FROM bookkiosk.studentaccount;
+
+SELECT * FROM bookkiosk.donations;
